@@ -2,15 +2,16 @@ import tkinter as tk
 from playsound import playsound
 window = tk.Tk()
 
-window.title("نوبت شمار گویا")
+window.title("https://github.com/Shahnazi2002/Number-Caller")
 
 window.geometry("500x400")
 window.resizable(False, False)
 
 nobat = 1
 
+title_display = tk.Label(text="نوبت شمار گویا", bg="Cyan", font=("Tahoma", 12, "bold")).place(relx=0.25, rely=0, relwidth=0.5, relheight=0.05)
 nobat_display = tk.Label(text=str(nobat).zfill(2), bg="Cyan", font=("Arial", 120, "bold"))
-nobat_display.place(relx=0.25, rely=0, relwidth=0.5, relheight=0.5)
+nobat_display.place(relx=0.25, rely=0.05, relwidth=0.5, relheight=0.5)
 
 def nobat_minus():
     global nobat
